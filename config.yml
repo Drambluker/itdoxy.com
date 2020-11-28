@@ -1,0 +1,33 @@
+baseURL: "/"
+languageCode: "ru-ru"
+defaultContentLanguage: "ru"
+title: ITdoxy
+paginate: 5
+theme: hugo-PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+languages:
+  ru:
+    languageName: "Русский"
+    menu:
+      main:
+        - name: Архив
+          url: /archives/
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+
+  dateFormat: "02.01.2006"
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  defaultTheme: auto
+  disableThemeToggle: false
