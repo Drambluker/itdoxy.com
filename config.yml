@@ -19,6 +19,10 @@ languages:
     languageName: "Русский"
     menu:
       main:
+        - name: Категории
+          url: /categories/
+        - name: Теги
+          url: /tags/
         - name: Архив
           url: /archives/
 
