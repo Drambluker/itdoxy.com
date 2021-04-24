@@ -21,10 +21,13 @@ languages:
       main:
         - name: Категории
           url: /categories/
+          weight: 1
         - name: Теги
           url: /tags/
+          weight: 2
         - name: Архив
           url: /archives/
+          weight: 3
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -35,3 +38,16 @@ params:
   ShowShareButtons: true
   defaultTheme: auto
   disableThemeToggle: false
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Поваренная книга программиста"
+    Content: "У нас вы сможете найти разнообразные статьи в сфере информационных технологий, посвящённые системному и сетевому администрированию, программированию, базам данных, Linux и не только."
+
+  socialIcons:
+    - name: telegram
+      url: "https://t.me/ITdoxy"
+    - name: twitter
+      url: "https://twitter.com/ITdoxy"
+    - name: vk
+      url: "https://vk.com/itdoxy"
