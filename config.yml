@@ -3,7 +3,7 @@ languageCode: "ru-ru"
 defaultContentLanguage: "ru"
 title: ITdoxy
 paginate: 5
-theme: hugo-PaperMod
+theme: PaperMod
 
 enableRobotsTXT: true
 buildDrafts: false
