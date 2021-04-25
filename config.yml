@@ -31,6 +31,15 @@ languages:
         - name: Архив
           url: /archives/
           weight: 3
+        - name: Поиск
+          url: /search/
+          weight: 4
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
