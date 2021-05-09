@@ -1,7 +1,7 @@
 ---
 title: "Как перенастроить установленный пакет в Ubuntu или Debian"
 date: 2019-04-16T00:00:00+03:00
-tags: ["linux"]
+categories: ["Linux"]
 draft: false
 ---
 
