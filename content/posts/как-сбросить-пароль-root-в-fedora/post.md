@@ -1,8 +1,7 @@
 ---
 title: "Как сбросить пароль root в Fedora"
 date: 2019-04-12T00:00:00+03:00
-categories: ["Администрирование"]
-tags: ["linux"]
+categories: ["Администрирование", "Linux"]
 draft: false
 ---
 
