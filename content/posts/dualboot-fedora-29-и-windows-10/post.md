@@ -1,5 +1,6 @@
 ---
 title: "Dualboot Fedora 29 и Windows 10"
+slug: "dualboot-fedora-29-и-windows-10"
 date: 2019-05-01T00:00:00+03:00
 categories: ["Linux"]
 draft: false
