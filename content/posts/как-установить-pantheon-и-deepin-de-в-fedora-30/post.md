@@ -1,5 +1,6 @@
 ---
 title: "Как установить Pantheon и Deepin DE в Fedora 30"
+slug: "как-установить-pantheon-и-deepin-de-в-fedora-30"
 date: 2019-05-02T00:00:00+03:00
 categories: ["Linux"]
 draft: false

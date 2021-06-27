@@ -1,5 +1,6 @@
 ---
 title: "Как установить DHCP-сервер в CentOS, RHEL и Fedora"
+slug: "как-установить-dhcp-сервер-в-centos-rhel-и-fedora"
 date: 2019-04-04T00:00:00+03:00
 categories: ["Администрирование", "Linux"]
 draft: false
