@@ -1,5 +1,6 @@
 ---
 title: "Настройка DNS-сервера в CentOS 7"
+slug: "настройка-dns-сервера-в-centos-7"
 date: 2019-04-05T00:00:00+03:00
 categories: ["Администрирование", "Linux"]
 draft: false

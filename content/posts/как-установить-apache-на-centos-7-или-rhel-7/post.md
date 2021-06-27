@@ -1,5 +1,6 @@
 ---
 title: "Как установить Apache в CentOS 7 или RHEL 7"
+slug: "как-установить-apache-на-centos-7-или-rhel-7"
 date: 2019-04-08T00:00:00+03:00
 categories: ["Администрирование", "Linux"]
 draft: false
