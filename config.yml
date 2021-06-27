@@ -5,6 +5,9 @@ title: ITdoxy
 paginate: 5
 theme: PaperMod
 
+permalinks:
+  posts: /:slug/
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
