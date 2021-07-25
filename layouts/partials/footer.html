@@ -2,7 +2,11 @@
     {{- if .Site.Copyright }}
     <span>{{ .Site.Copyright | markdownify }}</span>
     {{- else }}
-    <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></span>
+    <span>&copy; 2019-{{ now.Year }} <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></span>
+    <br>
+    <span>Powered by <a href="https://mondevyat.org">Artyom Monchenko</a> & <a href="https://eric.vlaskin.org">Eric Vlaskin</a></span>
+    <br>
+    <span>Email: <a href="mailto:info@itdoxy.com">info@itdoxy.com</a></span>
     {{- end }}
 </footer>
 
