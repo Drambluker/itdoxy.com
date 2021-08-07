@@ -1,0 +1,96 @@
+---
+title: "Интерфейс администратора Django"
+slug: "интерфейс-администратора-django"
+date: 2019-08-06T01:00:00+03:00
+categories: ["Программирование", "Веб-разработка", "Django"]
+tags: ["Курс молодого бойца Django"]
+draft: false
+---
+
+![](/posts/интерфейс-администратора-django/Django6.jpg)
+
+Django предоставляет готовый пользовательский интерфейс для администрирования. Мы все знаем, насколько важен интерфейс
+администратора для веб-проекта. Django автоматически генерирует интерфейс администратора на основе моделей вашего проекта.
+
+## Запуск интерфейса администратора
+
+Интерфейс администратора зависит от модуля **django.contrib**. Чтобы он работал, вам нужно убедиться, что все необходимые
+модули импортированы в кортежи **INSTALLED_APPS** и **MIDDLEWARE_CLASSES** файла **myproject/settings.py**.
+
+Для **INSTALLED_APPS**:
+
+```
+INSTALLED_APPS = (
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'myapp',
+)
+```
+
+Для **MIDDLEWARE_CLASSES**:
+
+```
+MIDDLEWARE_CLASSES = (
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+)
+```
+
+Перед запуском вашего сервера, чтобы получить доступ к интерфейсу администратора, вам нужно создать базу данных:
+
+```
+$ python manage.py migrate
+```
+
+Данная команда создаст таблицы или коллекции в зависимости от типа вашей базы данных, необходимые для запуска интерфейса администратора.
+
+Если у вас еще нет аккаунта суперпользователя, вы всегда можете создать его с помощью следующей команды:
+
+```
+$ python manage.py createsuperuser
+```
+
+Теперь, чтобы запустить интерфейс администратора, нам нужно убедиться, что для него настроен URL. Откройте файл
+**myproject/url.py**, в нем у вас должно быть следующее:
+
+```
+from django.conf.urls import patterns, include, url
+
+from django.contrib import admin
+admin.autodiscover()
+
+urlpatterns = patterns('',
+    # Examples:
+    # url(r'^$', 'myproject.views.home', name = 'home'),
+    # url(r'^blog/', include('blog.urls')),
+    
+    url(r'^admin/', include(admin.site.urls)),
+)
+```
+
+Теперь запустите сервер:
+
+```
+$ python manage.py runserver
+```
+
+Ваш интерфейс администратора будет доступен по адресу: [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
+
+![](https://i.imgur.com/vKTPFZ3.png)
+
+После входа в учетную запись суперпользователя вы увидите следующее:
+
+![](https://i.imgur.com/V3XxAmn.png)
+
+Данный интерфейс позволит вам администрировать группы и пользователей Django, а также все зарегистрированные модели ваших
+приложений. Интерфейс дает вам возможность создавать, читать, обновлять и удалять записи ваших моделей.
+
+Источник: [Django — Admin Interface](https://www.tutorialspoint.com/django/django_admin_interface.htm)
