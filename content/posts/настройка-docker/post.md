@@ -1,0 +1,54 @@
+---
+title: "Настройка Docker"
+slug: "настройка-docker"
+date: 2019-08-06T02:00:00+03:00
+categories: ["Docker"]
+tags: ["Курс молодого бойца Docker"]
+draft: false
+---
+
+![](/posts/настройка-docker/docker9.jpg)
+
+В этой главе, мы рассмотрим различные варианты настройки Docker.
+
+## service docker stop
+
+Данная команда используется для остановки **процесса-демона** Docker:
+
+```
+service docker stop
+```
+
+Вывод покажет сообщение, гласящее о том, что процесс Docker остановлен.
+
+### Пример
+
+```
+sudo service docker stop
+```
+
+Пример вывода:
+
+![](https://i.imgur.com/5s3e89T.jpg)
+
+## service docker start
+
+Данная команда используется для запуска **процесса-демона** Docker:
+
+```
+service docker start
+```
+
+Вывод покажет сообщение, гласящее о том, что процесс Docker запущен.
+
+### Пример
+
+```
+sudo service docker start
+```
+
+Пример вывода:
+
+![](https://i.imgur.com/9EAGoDc.jpg)
+
+Источник: [Docker — Configuring](https://www.tutorialspoint.com/docker/configuring_docker.htm)
