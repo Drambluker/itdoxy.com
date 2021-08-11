@@ -42,6 +42,12 @@ params:
   defaultTheme: auto
   disableThemeToggle: false
 
+  # opengraph
+  title: ITdoxy
+  description: Поваренная книга программиста
+  images:
+    - background-1920x1080.jpg
+
   # home-info mode
   homeInfoParams:
     Title: "Поваренная книга программиста"
