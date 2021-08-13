@@ -1,0 +1,26 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: 'ru'
+site_url: https://itdoxy.com
+#display_url: https://itdoxy.com
+logo_url: https://itdoxy.com/logo-512x512.png
+#publish_mode: editorial_workflow
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Публикация" # Used in the UI
+    folder: "content/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Заголовок", name: "title", widget: "string", required: true}
+      - {label: "Слаг", name: "slug", widget: "string", required: false}
+      - {label: "Дата публикации", name: "date", widget: "datetime", required: true}
+      - {label: "Категории", name: "categories", widget: "list", required: false}
+      - {label: "Теги", name: "tags", widget: "list", required: false}
+      - {label: "Черновик", name: "draft", widget: "boolean", default: true}
+      - {label: "Текст", name: "body", widget: "markdown"}
