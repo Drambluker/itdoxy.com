@@ -17,10 +17,192 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Заголовок", name: "title", widget: "string", required: true}
-      - {label: "Слаг", name: "slug", widget: "string", required: false}
-      - {label: "Дата публикации", name: "date", widget: "datetime", required: true}
-      - {label: "Категории", name: "categories", widget: "list", required: false}
-      - {label: "Теги", name: "tags", widget: "list", required: false}
-      - {label: "Черновик", name: "draft", widget: "boolean", default: true}
-      - {label: "Текст", name: "body", widget: "markdown"}
+      - label: "Обложки"
+        name: "images"
+        widget: "list"
+        summary: '{{fields.image}}'
+        required: false
+        field: {label: Изображение, name: image, widget: image}
+      - label: "Заголовок"
+        name: "title"
+        widget: "string"
+        required: true
+      - label: "Слаг"
+        name: "slug"
+        widget: "string"
+        required: false
+      - label: "Дата публикации"
+        name: "date"
+        widget: "datetime"
+        required: true
+      - label: "Категории"
+        name: "categories"
+        widget: "list"
+        required: false
+      - label: "Теги"
+        name: "tags"
+        widget: "list"
+        required: false
+      - label: "Черновик"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      - label: "Текст"
+        name: "body"
+        widget: "markdown"
+  - name: "КМБ_Django"
+    label: "КМБ Django"
+    folder: "content/posts/Курс_молодого_бойца_Django"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: "Обложки"
+        name: "images"
+        widget: "list"
+        summary: '{{fields.image}}'
+        required: false
+        field: {label: Изображение, name: image, widget: image}
+      - label: "Заголовок"
+        name: "title"
+        widget: "string"
+        required: true
+      - label: "Слаг"
+        name: "slug"
+        widget: "string"
+        required: false
+      - label: "Дата публикации"
+        name: "date"
+        widget: "datetime"
+        required: true
+      - label: "Категории"
+        name: "categories"
+        widget: "list"
+        required: false
+      - label: "Теги"
+        name: "tags"
+        widget: "list"
+        required: false
+      - label: "Черновик"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      - label: "Текст"
+        name: "body"
+        widget: "markdown"
+  - name: "КМБ_Docker"
+    label: "КМБ Docker"
+    folder: "content/posts/Курс_молодого_бойца_Docker"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: "Обложки"
+        name: "images"
+        widget: "list"
+        summary: '{{fields.image}}'
+        required: false
+        field: {label: Изображение, name: image, widget: image}
+      - label: "Заголовок"
+        name: "title"
+        widget: "string"
+        required: true
+      - label: "Слаг"
+        name: "slug"
+        widget: "string"
+        required: false
+      - label: "Дата публикации"
+        name: "date"
+        widget: "datetime"
+        required: true
+      - label: "Категории"
+        name: "categories"
+        widget: "list"
+        required: false
+      - label: "Теги"
+        name: "tags"
+        widget: "list"
+        required: false
+      - label: "Черновик"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      - label: "Текст"
+        name: "body"
+        widget: "markdown"
+  - name: "КМБ_PostgreSQL"
+    label: "КМБ PostgreSQL"
+    folder: "content/posts/Курс_молодого_бойца_PostgreSQL"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: "Обложки"
+        name: "images"
+        widget: "list"
+        summary: '{{fields.image}}'
+        required: false
+        field: {label: Изображение, name: image, widget: image}
+      - label: "Заголовок"
+        name: "title"
+        widget: "string"
+        required: true
+      - label: "Слаг"
+        name: "slug"
+        widget: "string"
+        required: false
+      - label: "Дата публикации"
+        name: "date"
+        widget: "datetime"
+        required: true
+      - label: "Категории"
+        name: "categories"
+        widget: "list"
+        required: false
+      - label: "Теги"
+        name: "tags"
+        widget: "list"
+        required: false
+      - label: "Черновик"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      - label: "Текст"
+        name: "body"
+        widget: "markdown"
+  - name: "КМБ_SEO"
+    label: "КМБ SEO"
+    folder: "content/posts/Курс_молодого_бойца_SEO"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: "Обложки"
+        name: "images"
+        widget: "list"
+        summary: '{{fields.image}}'
+        required: false
+        field: {label: Изображение, name: image, widget: image}
+      - label: "Заголовок"
+        name: "title"
+        widget: "string"
+        required: true
+      - label: "Слаг"
+        name: "slug"
+        widget: "string"
+        required: false
+      - label: "Дата публикации"
+        name: "date"
+        widget: "datetime"
+        required: true
+      - label: "Категории"
+        name: "categories"
+        widget: "list"
+        required: false
+      - label: "Теги"
+        name: "tags"
+        widget: "list"
+        required: false
+      - label: "Черновик"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      - label: "Текст"
+        name: "body"
+        widget: "markdown"
