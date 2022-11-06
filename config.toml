@@ -1,0 +1,4 @@
+baseURL = "/"
+languageCode = "ru-ru"
+defaultContentLanguage = "ru"
+title = "ITdoxy"
