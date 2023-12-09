@@ -19,6 +19,8 @@ languages:
     languageName: "Русский"
     menu:
       main:
+        - name: Услуги
+          url: https://vk.link/itdoxy
         - name: Категории
           url: /categories/
         - name: Теги
