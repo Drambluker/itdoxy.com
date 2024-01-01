@@ -3,16 +3,19 @@
 {{- /* Footer custom content area end */ -}}
 
 <script>
-    window.yaContextCb.push(() => {
-        Ya.Context.AdvManager.render({
-            renderTo: 'yandex_rtb_R-A-1993717-1',
-            blockId: 'R-A-1993717-1'
+    if (!window.matchMedia("screen and (max-width: 768px)").matches) {
+        window.yaContextCb.push(() => {
+            Ya.Context.AdvManager.render({
+                renderTo: 'yandex_rtb_R-A-1993717-2',
+                blockId: 'R-A-1993717-2'
+            });
         });
-    });
+    }
     window.yaContextCb.push(() => {
         Ya.Context.AdvManager.render({
-            renderTo: 'yandex_rtb_R-A-1993717-2',
-            blockId: 'R-A-1993717-2'
+            "blockId": "R-A-1993717-5",
+            "renderTo": "yandex_rtb_R-A-1993717-5",
+            "type": "feed"
         });
     });
 </script>
