@@ -25,18 +25,21 @@ languages:
         - name: Услуги
           url: https://vk.link/itdoxy
           weight: 1
+        - name: Донат
+          url: https://pay.cloudtips.ru/p/22406f0b
+          weight: 2
         - name: Категории
           url: /categories/
-          weight: 2
+          weight: 3
         - name: Теги
           url: /tags/
-          weight: 3
+          weight: 4
         - name: Архив
           url: /archives/
-          weight: 4
+          weight: 5
         - name: Поиск
           url: /search/
-          weight: 5
+          weight: 6
 
 outputs:
   home:
