@@ -22,24 +22,27 @@ languages:
     languageName: "Русский"
     menu:
       main:
+        - name: Lab
+          url: https://lab.itdoxy.com
+          weight: 1
         - name: Услуги
           url: https://vk.link/itdoxy
-          weight: 1
+          weight: 2
         - name: Донат
           url: https://pay.cloudtips.ru/p/22406f0b
-          weight: 2
+          weight: 3
         - name: Категории
           url: /categories/
-          weight: 3
+          weight: 4
         - name: Теги
           url: /tags/
-          weight: 4
+          weight: 5
         - name: Архив
           url: /archives/
-          weight: 5
+          weight: 6
         - name: Поиск
           url: /search/
-          weight: 6
+          weight: 7
 
 outputs:
   home:
