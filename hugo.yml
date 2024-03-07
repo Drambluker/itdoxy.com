@@ -22,28 +22,28 @@ languages:
     languageName: "Русский"
     menu:
       main:
-        - name: Lab
+        - name: 🧪 Lab
           url: https://lab.itdoxy.com
           weight: 1
-        - name: Форум
+        - name: 🏛 Форум
           url: https://t.me/ITdoxyForum
           weight: 2
-        - name: Услуги
+        - name: 💎 Услуги
           url: https://vk.link/itdoxy
           weight: 3
-        - name: Донат
+        - name: 🍩 Донат
           url: https://pay.cloudtips.ru/p/22406f0b
           weight: 4
-        - name: Категории
+        - name: 🏷 Категории
           url: /categories/
           weight: 5
-        - name: Теги
+        - name: 🏷 Теги
           url: /tags/
           weight: 6
-        - name: Архив
+        - name: 🗄 Архив
           url: /archives/
           weight: 7
-        - name: Поиск
+        - name: 🔎 Поиск
           url: /search/
           weight: 8
 
