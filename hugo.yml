@@ -71,7 +71,6 @@ params:
 
   # home-info mode
   homeInfoParams:
-    LogoUrl: "logo-512x512.png"
     LogoWidth: 350 # custom size
     LogoHeight: 350 # custom size
     Title: "Ваш проводник в мир IT 💻"
